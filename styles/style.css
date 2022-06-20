@@ -1,0 +1,57 @@
+hr {
+	border: 2px solid #cc0000;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+* {
+	font-family: Calibri;
+	margin: 0;
+	padding: 0;
+}
+
+.intro {
+	padding: 95px 0px;
+	color: white;
+	margin-bottom: 2.5%;
+}
+
+.intro > div {
+	text-align: center;
+}
+
+.nav-container {
+	display: flex;
+	flex-flow: wrap;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: white;
+	width: 100%;
+	justify-content: right;
+	box-shadow: 1px 10px 15px -10px rgba(0, 0, 0, 0.1);
+}
+
+.nameplate {
+	position: sticky;
+	right: 100%;
+	font-weight: bold;
+}
+
+.nav-container > div {
+	padding: 10px;
+	font-size: 16px;
+}
+
+.nav-button:hover {
+	text-decoration: underline;
+	color: #cc0000;
+}
+
+.main {
+	background-color: #cc0000;
+	color: white!important;
+}

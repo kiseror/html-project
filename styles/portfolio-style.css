@@ -1,0 +1,21 @@
+.portfolio {
+	margin: 0 150px;
+}
+
+.portfolio-container-grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+.portfolio-container-grid > div {
+	border: 1px solid black;
+}
+
+img {
+	width: 100%;
+	object-fit: cover;
+}
+
+h3 {
+	text-align: center;
+}
