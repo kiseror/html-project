@@ -1,3 +1,8 @@
+::selection {
+	background-color: darkred;
+	color: white;
+}
+
 hr {
 	border: 2px solid #cc0000;
 	margin-bottom: 10px;
@@ -19,7 +24,7 @@ a {
 	padding: 95px 0px;
 	color: white;
 	background-color: darkred;
-	margin-bottom: 2.5%;
+	margin-bottom: 50px;
 }
 
 .intro > div {
@@ -32,6 +37,7 @@ a {
 	position: fixed;
 	top: 0;
 	right: 0;
+	z-index: 10;
 	background-color: white;
 	width: 100%;
 	justify-content: right;
@@ -47,6 +53,7 @@ a {
 .nav-container > div {
 	padding: 10px;
 	font-size: 16px;
+	transition: all 0.2s ease-in-out;
 }
 
 .nav-button:hover {
