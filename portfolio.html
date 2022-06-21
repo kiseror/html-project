@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/portfolio-style.css">
 	<!--Css Libraries to Use-->
 	<!--https://animate.style/-->
-
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<!--https://fontawesome.com/-->
 
 	<!--Css Libraries to Use-->
@@ -16,6 +16,7 @@
 	<!--Css Libraries to Use-->
 </head>
 <body>
+
 	<div class="nav-container">
 		<div class="nameplate">My Final Output</div>
 		<div class="nav-button"><a href="index.html" title="Home">Home</a></div>
@@ -23,55 +24,89 @@
 		<div class="nav-button main"><a href="portfolio.html" title="Projects/Portfolio">Projects</a></div>
 		<div class="nav-button"><a href="contact.html" title="Contact Me!">Contact</a></div>
 	</div>
-	<div class="intro" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/portfolio-heading-pic-1.png)">
+
+	<div class="intro" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(images/portfolio-heading-pic-1.png)">
 		<div>
 			<h1>My Projects/Portfolio</h1>
-			<p>The following are school activities and personal projects that I have done throughout School Year 2021-2022</p>
+			<p>These are the school activities and personal projects that I have done throughout School Year 2021-2022.<br>Click the projects to see the full view</p>
 		</div>
 	</div>
-	<div class="portfolio">
+	<div class="portfolio animate__animated animate__fadeInUp">
 		<div>
 			<h2>School Projects</h2>
 			<hr>
-			<!--make the divs go to activities when clicked and make activities folder-->
-				<div class="portfolio-container-flex">
-					<div class="item1">
-						<img src="images/hello-world.png" alt="1st HTML Activity"><br>
-						<h3>Hello World!</h3>
-						<p>My First HTML Code :)</p>
-					</div>
-					<div class="item2">
-						<img src="images/flag-activity.png" alt="Flag Activity"><br>
-						<h3>Flags of India & Paraguay<br></h3>
-						<p>HTML Colors - Flag Activity</p>
-					</div>
-					<div class="item3">
-						<a href="https://youtube.com">
-						<img src="images/dice-actvity.png" alt="Dice Activity 6 Dices"><br>
-						<h3>6 Dices</h3>
-						<p>CSS Display and Position Properties Activity</p>
-						</a>
-					</div>
+			<div class="portfolio-container-flex">
+				<div class="item1">
+				<a href="activities/hello-world.html" title="">
+					<img src="images/hello-world.png" alt="1st HTML Activity"><br>
+					<h3>Hello World!</h3>
+					<p>My First HTML Code :)</p>
+				</a>
 				</div>
-				<div class="portfolio-container-flex">
-					<div class="item1">
-						<img src="images/mini-resume.png" alt="Mini Resume"><br>
-						<h3>My Mini Resume<br>Mini-resume Activity 2.0</h3>
-					</div>
-					<div class="item2">
-						<img src="images/block-inline.png" alt="Dice Activity 6 Dices"><br>
-						<h3>Block vs Inline<br>CSS Display and Position Properties</h3>
-					</div>
-					<div class="item3">
-						<img src="images/image-hover.png" alt="Dice Activity 6 Dices"><br>
-						<h3>Dice Activity<br>CSS Display and Position Properties</h3>
-					</div>
+				<div class="item2">
+				<a href="activities/flags.html" title="">
+					<img src="images/flag-activity.png" alt="Flag Activity"><br>
+					<h3>Flags of India & Paraguay</h3>
+					<p>HTML Colors - Flag Activity</p>
+				</a>
 				</div>
-			<h2>My Own Projects owo</h2>
+				<div class="item3">
+				<a href="activities/dice6.html" title="">
+					<img src="images/dice-actvity.png" alt="Dice Activity 6 Dices"><br>
+					<h3>6 Dices</h3>
+					<p>CSS Display and Position Properties Activity</p>
+				</a>
+				</div>
+			</div>
+			<div class="portfolio-container-flex">
+				<div class="item1">
+				<a href="activities/Mini-resume.html" title="">
+					<img src="images/mini-resume.png" alt="Mini Resume"><br>
+					<h3>My Mini Resume</h3>
+					<p>Mini-resume Activity 2.0</p>
+				</a>
+				</div>
+				<div class="item2">
+				<a href="activities/block-inline.html" title="">
+					<img src="images/block-inline.png" alt="Dice Activity 6 Dices"><br>
+					<h3>Block vs Inline</h3>
+					<p>CSS Display and Position Properties</p>
+				</a>
+				</div>
+				<div class="item3">
+				<a href="activities/gallery.html" title="">
+					<img src="images/image-hover.png" alt="Dice Activity 6 Dices"><br>
+					<h3>Photo Gallery</h3>
+					<p>CSS Selectors Activity</p>
+				</a>
+				</div>
+			</div>
+			<h2>Personal Projects</h2>
 			<hr>
+			<div class="portfolio-container-flex">
+				<div class="item1">
+				<a href="activities/calendar.html">
+					<img src="images/calendar.png" alt="1st HTML Activity"><br>
+					<h3>November Calendar</h3>
+					<p>Making a calendar using HTML Tables</p>
+				</a>
+				</div>
+				<div class="item2">
+				<a href="activities/moon.html">
+					<img src="images/moon-lyrics.png" alt="Flag Activity"><br>
+					<h3>Song Lyrics</h3>
+					<p>Fly Me to the Moon ;)</p>
+				</a>
+				</div>
+				<div class="item3">
+				<a href="activities/2dtransform.html" title="">
+					<img src="images/transform-guide.png" alt="Dice Activity 6 Dices"><br>
+					<h3>2d Transform Properties Demo</h3>
+					<p>CSS 2d Transforms</p>
+				</a>
+				</div>
+			</div>
 		</div>
 	</div>
-
-	
 </body>
 </html>
