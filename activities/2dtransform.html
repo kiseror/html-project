@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>2D Transform - Group 4</title>
+	<style type="text/css">
+* {
+	font-family: Comic Sans MS;
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
+}
+
+body {
+	background-color: #c9ad7f;
+}
+
+hr {
+	border-top: 1px solid white;
+}
+
+h1 {
+	font-family: Tahoma;
+}
+
+a {
+	text-decoration: none;
+}
+
+.grid-item1 {
+	grid-area: header;
+	background-color: #e8d3b9;
+	color: #a57a5a;
+}
+
+.grid-item2 {
+	grid-area: nav;
+	background-color: #e8d3b9;
+}
+
+.grid-item3 {
+	grid-area: rotate;
+	background-color: #e8d3b9;
+}
+
+.grid-item4 {
+	grid-area: translate;
+	background-color: #e8d3b9;
+}
+
+.grid-item5 {
+	grid-area: scale;
+	background-color: #e8d3b9;
+}
+
+.grid-item6 {
+	grid-area: skew;
+	background-color: #e8d3b9;
+}
+
+.grid-item7 {
+	grid-area: matrix;
+	background-color: #e8d3b9;
+}
+
+.flexcontainer {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.flex-item {
+	background-color: #c9ad7f;
+	color: white;
+}
+
+.flexcontainer > div {
+	width: 100%;
+	padding: 5px;
+	margin: 10px;
+	text-align: center;
+}
+
+.container {
+	display: grid;
+	grid-template-areas: 
+	'header header header'
+	'nav nav nav'
+	'rotate skew scale'
+	'rotate translate translate'
+	'matrix matrix matrix';
+	grid-template-columns: 250px auto auto;
+	background-color: #c9ad7f;
+	gap: 10px;
+	padding: 10px;
+}
+
+.container > div {
+	text-align: center;
+	padding: 5px 20px;
+}
+
+.rotate1 {
+	background-color: #c7ad7f;
+	padding: 20px 0px;
+	color: white;
+}
+
+.rotate2 {
+	background-color: #f5f5dc;
+	color: black;
+	transform: rotate(-180deg);
+	padding: 50px 0px;
+	margin: 5px;
+}
+
+.rotate2:hover {
+	transform: rotate(0deg);
+}
+
+.rotate1:hover {
+	transform: rotate(10deg);
+}
+
+.skewX1 {
+	background-color: #ae6e4e;
+	transform: skewX(30deg);
+	color: white;
+}
+
+.skewX2 {
+	background-color: #cc7967;
+	transform: skewX(-45deg);
+	color: white;
+}
+
+.skewY1 {
+	background-color: #a57a5a;
+	transform: skewY(-5deg);
+	color: white;
+}
+
+.skewY2 {
+	background-color: #c9ad7f;
+	transform: skewY(20deg);
+	color: white;
+}
+
+.skew1 {
+	background-color: #c7ad7f;
+	padding: 20px 0px;
+	margin:10px;
+	color: white;
+}
+
+.skew1:hover {
+	transform: skew(56deg,-14deg);
+}
+
+.skew2:hover {
+	transform: skew(-43deg,3deg);
+}
+
+.skew2 {
+	background-color: #f5f5dc;
+	color: black;
+	padding: 20px 0px;
+	margin:10px;
+}
+
+.scale2:hover {
+	transform: scale(0.5,0.5);
+}
+
+.scale2 {
+	background: white;
+} 
+
+.scale1:hover {
+	transform: scale(2,4);
+}
+
+.scaleX1, .scaleY1, .scale1 {
+	background-color: beige;
+}
+
+.scale1 {
+	z-index: 2;
+}
+
+.scaleX1:hover {
+	transform: scaleX(3);
+}
+
+.scaleY1:hover {
+	transform: scaleY(3);
+}
+
+.scaleX2, .scaleY2, .scale2 {
+	background-color: #a57a5a;
+	color: white;
+} 
+
+.scaleX2:hover {
+	transform: scaleX(0.25);
+}
+
+.scaleY2:hover {
+	transform: scaleY(0.75);
+}
+
+.translate1, .translate3 {
+	background-color: #ae6e4e;
+	color: white;
+}
+
+.translate2, .translate4 {
+	background-color: #c9ad7f;
+	color: white;
+}
+
+.translate1:hover {
+	transform: translate(-37px, 24px);
+}
+
+.translate2:hover {
+	transform: translate(10px, -10px);
+}
+
+.translate3:hover {
+	transform: translateX(25px);
+}
+
+.translate4:hover {
+	transform: translateY(-30%);
+}
+
+.support {
+	background: #c7ad7f;
+	color: white;
+	padding: 3px 0px;
+}
+
+.support-heading {
+	font-size: 20px;
+}
+
+.support-items {
+	margin-left: -10px;
+}
+
+/*format: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+
+.matrix1:hover {
+	transform: matrix(1.25, 0, 3, 2, 0, 0);
+}
+
+.matrix2:hover {
+	transform: matrix(0.5, -0.5, 1, 3, 4, 3);
+}
+
+.matrix3:hover {
+	transform: matrix(1, 0.2, 0.3, 4, 5, -6);
+}
+
+.matrix1, .matrix3 {
+	background-color: beige;
+}
+
+.matrix2 {
+	background-color: #c7ad7f;
+	color: white;
+}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="grid-item1"><h1>CSS 2d Transform Methods</h1></div>
+	<div class="grid-item2">
+		<div class="flexcontainer">
+			<div class="flex-item">Rotate</div>
+			<div class="flex-item">Translate</div>
+			<div class="flex-item">Scale</div>
+			<div class="flex-item">Skew</div>
+			<div class="flex-item">Matrix</div>
+		</div>
+	</div>
+	<div class="grid-item3"><b>Rotate</b> <br>The rotate() method rotates an element clockwise or counter-clockwise.<hr>
+		<p>transform: rotate(_deg);</p>
+		<div class="rotate1">This div is rotated 10deg clockwise</div>
+	 		<p>Mouse over the element to see the effect!</p>
+	 	<div class="rotate2">This code is made by Group 4 :3</div>
+	 		<p>This div is rotated 180deg counterclockwise (-180deg)<br>
+	 			mouse over the element to revert to its original rotation</p><hr>
+	 	<div class="support"><p class="support-heading">Browser Support:</p>
+	 		<p><ul style="text-align: left; list-style-type: none;" class="support-items">
+	 			<li>Google - 36.0</li>
+	 			<li>Microsoft Edge - 10.0</li>
+	 			<li>Firefox - 16.0</li>
+	 			<li>Safari - 9.0</li>
+	 			<li>Opera - 23.0</li>
+	 		</ul></div>
+	 	<p style="text-align: left;">Sources: <ol style="text-align: left; margin-left: -20px;">
+	 		<li><a href="https://www.w3schools.com/css/css3_2dtransforms.asp">W3 Schools</a></li>
+	 		<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">MDN Web Dev</a></li>
+	 	</ol></p>
+	</div>
+	<div class="grid-item4"><b>Translate</b><br>The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).<hr>
+		<div class="flexcontainer">
+			<div class="translate1">This div element is moved 37 pixels to the left, and 24 pixels down from its current position.</div>
+			<div class="translate2">This div element is moved 10 pixels to the right, and 10 pixels up from its current position.</div>
+			<div class="translate3">This div element is moved 25 pixels to the right</div>
+			<div class="translate4">This div element is moved 30% up</div>
+		</div>
+		<p>Mouse over the elements to see their effects!</p>
+	</div>
+	<div class="grid-item5"><b>Scale</b><br>The scale() method increases or decreases the size of an element (according to the parameters given for the width and height).<hr>
+		<p>Mouse over the elements to see their effects!</p>
+		<p>transform: scale(_, _);</p>
+		<div class="flexcontainer">
+			<div class="scale1">This div element is two times of its original width, and four times of its original height.</div>
+			<div class="scale2">This div element is half of its original height and width.</div>
+		</div>
+		<p>transform: scaleX(_);<br>Increases or decreases the width of an element.</p>
+		<div class="flexcontainer">
+			<div class="scaleX1">This div element is three times of its original width</div>
+			<div class="scaleX2">This div element is quarter of its original width</div>
+		</div>
+		<p>transform: scaleY(_);<br>Increases or decreases the height of an element.</p>
+		<div class="flexcontainer">
+			<div class="scaleY1">This div element is three times of its original height.</div>
+			<div class="scaleY2">This div element is 3/4 of its original height.</div>
+		</div>
+	</div>
+	<div class="grid-item6"><b>Skew</b><br>The skew() method skews an element along the X and Y-axis by the given angles.<hr>
+		<div class="flexcontainer">
+			<div>transform: skewX(_deg);<br>Skews an element along the X-axis by the given angle.</div>
+			<div>transform: skewY(_deg);<br>Skews an element along the Y-axis by the given angle.</div>
+		</div>
+		<div class="flexcontainer">
+			<div class="skewX1">This div is skewed 30deg along the x-axis</div>
+			<div class="skewY1">This div is skewed -5deg along the y-axis</div>
+		</div>
+		<div class="flexcontainer">
+			<div class="skewX2">This div is skewed -45deg along the x-axis</div>
+			<div class="skewY2">This div is skewed 20deg along the y-axis</div>
+		</div>
+		<p>transform: skew(_deg, _deg);</p>
+			<div class="skew1">This div is skewed 56deg along the x-axis and -14deg along the y-axis<br>transform: skew(56deg, -14deg)</div>
+			<p>Mouse over the elements to see their effects!</p>
+			<div class="skew2">This div is skewed 56deg along the x-axis and -14deg along the y-axis<br>transform: skew(-43deg, 3deg)</div><br>
+	</div>
+	<div class="grid-item7"><b>Matrix</b><br>The matrix() method combines all the 2D transform methods into one.<hr>
+		<div class="flexcontainer">
+			<div class="matrix1">transform: matrix(1.25, 0, 3, 2, 0, 0);</div>
+			<div class="matrix2">transform: matrix(0.5, -0.5, 1, 3, 4, 3);</div>
+			<div class="matrix3">transform: matrix(1, 0.2, 0.3, 4, 5, -6);</div>
+		</div>
+	<p>The parameters are as follow: <br>matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())</p>
+	</div>
+</div>
+</body>
+</html>
