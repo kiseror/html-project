@@ -1,5 +1,7 @@
 hr {
 	border: 2px solid #cc0000;
+	margin-bottom: 10px;
+	border-collapse: collapse;
 }
 
 a {
@@ -16,6 +18,7 @@ a {
 .intro {
 	padding: 95px 0px;
 	color: white;
+	background-color: darkred;
 	margin-bottom: 2.5%;
 }
 
