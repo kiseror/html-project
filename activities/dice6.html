@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title> DICE ACTIVITY (CSS BOX MODEL)</title>
+    <link rel="stylesheet" type="text/css" href="activitystyle.css">
     <style>
         .wrapper {
             border: 10px solid black;
@@ -118,7 +119,14 @@
     </style>
 </head>
 <body>
-
+    <div class="nav-container">
+        <div class="nameplate">My Final Output</div>
+        <div class="nav-button"><a href="index.html" title="Home">Home</a></div>
+        <div class="nav-button"><a href="about.html" title="About Me :)">About</a></div>
+        <div class="nav-button main"><a href="portfolio.html" title="Projects/Portfolio">Projects</a></div>
+        <div class="nav-button"><a href="contact.html" title="Contact Me!">Contact</a></div>
+    </div>
+<div style="padding: 2.5% 0;">
 <div class="container">
 
 <!-- 6th side -->
@@ -260,6 +268,62 @@
 
 </div>
 
+</div>
+</div>
+<div class="nav">
+    <div class="item1"><a href="*">< Back to Projects</a></div>
+    <div class="arrow1"><a href="flags.html">←</a></div>
+    <div class="item3"><b>6 Dices</b> - CSS Display and Position Properties Activity</div>
+    <div class="arrow2"><a href="Mini-Resume.html">→</a></div>
+    <div class="ins"><button id="myBtn">Instructions & Code</button></div>
+</div>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1 style="text-align: center;">Instructions</h1>
+    <hr>
+    <p><q><i>In the last activity, you were only tasked to make one-sided dice. This time, you'll be creating 6 sided dice/full-sided dice. Please see attached image for reference.
+        <ol>
+            <li>Set the border of the dice to be 200px width x 200px height.</li>
+            <li>Set the size of the small circles to be 40px height and 40px width.</li>
+            <li>Use the CSS property "border-radius" to soften the edges of the divs and to create the small circles.</li>
+            <li>Use CSS box model, display, and position properties to position the different div's to their proper places.</li>
+        </ol>
+    *Attached is the HTML file. You may alter or edit the HTML file if you want as long as the desired output is achieved. Use internal styling in making the activity so that you will only have to submit one file. Good Luck and Enjoy the activity!!</i></q></p>
+    <h1 style="text-align: center;">Code</h1>
+    <hr>
+    <div class="code">
+    <p>
+    &#60;!DOCTYPE><br>
+    &#60;html><br>
+    &#60;head><br>
+    &#60;title> Johann Kaiser P. Fontanoza &#60;/title><br>
+    &#60;/head><br>
+    &#60;body><br>
+    &#60;h1> Hello World &#60;/h1><br>
+    &#60;p> Johann Kaiser P. Fontanoza &#60;/p><br>
+    &#60;/body><br>
+    &#60;/html><br>
+    </p>
+    </div>
+  </div>
+</div>
+<script>
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </div>
 </body>
 </html>

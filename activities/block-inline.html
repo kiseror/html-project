@@ -3,6 +3,7 @@
 <html>
 <head>
     <title>HTML Inline and Block Assignment</title>
+    <link rel="stylesheet" type="text/css" href="activitystyle.css">
 <style>
     .title {
         text-align: center;
@@ -29,6 +30,14 @@
 </style>
 </head>
 <body>
+    <div class="nav-container">
+        <div class="nameplate">My Final Output</div>
+        <div class="nav-button"><a href="index.html" title="Home">Home</a></div>
+        <div class="nav-button"><a href="about.html" title="About Me :)">About</a></div>
+        <div class="nav-button main"><a href="portfolio.html" title="Projects/Portfolio">Projects</a></div>
+        <div class="nav-button"><a href="contact.html" title="Contact Me!">Contact</a></div>
+    </div>
+<div style="padding: 2.5% 0;">
     <h2 class="title">HTML INLINE VS. BLOCK ELEMENTS</h2>
     
     <table width="100%">
@@ -44,6 +53,55 @@
             <div>The following paragraph is a <p class="block-highlight">block-level element;</p>its background has been colored to display both the beginning and end of the block-level element's influence</div>
         </td>
         </tr>
-     </table>
+    </table>
+</div>
+<div class="nav">
+    <div class="item1"><a href="*">< Back to Projects</a></div>
+    <div class="arrow1"><a href="Mini-Resume.html">←</a></div>
+    <div class="item3"><b>Block vs Inline</b> - CSS Display and Position Properties</div>
+    <div class="arrow2"><a href="gallery.html">→</a></div>
+    <div class="ins"><button id="myBtn">Instructions & Code</button></div>
+</div>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1 style="text-align: center;">Instructions</h1>
+    <hr>
+    <p><q><i>See the attached file. You have to make an identical table. A two-column table with two headers (Inline and Block Elements). Your work should exactly look like the screenshot attached. NO MORE, NO LESS. As discussed by the 2nd presenter earlier, &#60;span> is an inline element and &#60;p> and &#60;div> is a block-level element. Show that in your code by highlighting the inline &#60;span> and block-level elements &#60;div> and &#60;p> with the colors that you see in the screenshot attached. Don't forget to color the headers as well. Use only RGB color values in putting colors in the highlighted elements.</i></q></p>
+    <h1 style="text-align: center;">Code</h1>
+    <hr>
+    <div class="code">
+    <p>
+    &#60;!DOCTYPE><br>
+    &#60;html><br>
+    &#60;head><br>
+    &#60;title> Johann Kaiser P. Fontanoza &#60;/title><br>
+    &#60;/head><br>
+    &#60;body><br>
+    &#60;h1> Hello World &#60;/h1><br>
+    &#60;p> Johann Kaiser P. Fontanoza &#60;/p><br>
+    &#60;/body><br>
+    &#60;/html><br>
+    </p>
+    </div>
+  </div>
+</div>
+<script>
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</div>
 </body>
 </html>

@@ -2,9 +2,69 @@
 <html>
 <head>
 <title> Johann Kaiser P. Fontanoza </title>
+<link rel="stylesheet" type="text/css" href="activitystyle.css">
 </head>
 <body>
+	<div class="nav-container">
+		<div class="nameplate">My Final Output</div>
+		<div class="nav-button"><a href="index.html" title="Home">Home</a></div>
+		<div class="nav-button"><a href="about.html" title="About Me :)">About</a></div>
+		<div class="nav-button main"><a href="portfolio.html" title="Projects/Portfolio">Projects</a></div>
+		<div class="nav-button"><a href="contact.html" title="Contact Me!">Contact</a></div>
+	</div>
+<div style="padding: 2.5% 0;">
 <h1> Hello World </h1>
 <p> Johann Kaiser P. Fontanoza </p>
+</div>
+<!--Github Portolio libk on button 1--->
+
+</div>
+<div class="nav">
+    <div class="item1"><a href="*">< Back to Projects</a></div>
+    <div class="arrow1"></div>
+    <div class="item3"><b>Hello World!</b> - My First HTML Code</div>
+    <div class="arrow2"><a href="flags.html">→</a></div>
+    <div class="ins"><button id="myBtn">Instructions & Code</button></div>
+</div>
+<div id="myModal" class="modal">
+	<div class="modal-content">
+    <span class="close">&times;</span>
+    <h1 style="text-align: center;">Instructions</h1>
+    <hr>
+    <p><q><i>Download Notepad ++ and write your very first Hello World code in HTML. Write your code in the text box provided by Edmodo.  Please also attach a screenshot showing the Hello World + your name once you run your code on your browser. This assignment will be 20 points. 10 points for your code and 10 points for the screenshot you will provide.</i></q></p>
+    <h1 style="text-align: center;">Code</h1>
+    <hr>
+    <div class="code">
+    <p>
+    &#60;!DOCTYPE><br>
+	&#60;html><br>
+	&#60;head><br>
+	&#60;title> Johann Kaiser P. Fontanoza &#60;/title><br>
+	&#60;/head><br>
+	&#60;body><br>
+	&#60;h1> Hello World &#60;/h1><br>
+	&#60;p> Johann Kaiser P. Fontanoza &#60;/p><br>
+	&#60;/body><br>
+	&#60;/html><br>
+	</p>
+    </div>
+  </div>
+</div>
+<script>
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </body>
 </html>

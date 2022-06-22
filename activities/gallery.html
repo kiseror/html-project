@@ -4,14 +4,15 @@
   <meta charset="utf-8">
   <title>CSS Selectors Activity</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="activitystyle.css">
   <style>
-    * {
-      font-family: Helvetica;
-      box-sizing: border-box;
-    }
-
     h2, h4 {
       text-align: center;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
     }
 
     .responsive {
@@ -31,10 +32,19 @@
   </style>
 </head>
 <body>
+    <div class="nav-container">
+        <div class="nameplate">My Final Output</div>
+        <div class="nav-button"><a href="index.html" title="Home">Home</a></div>
+        <div class="nav-button"><a href="about.html" title="About Me :)">About</a></div>
+        <div class="nav-button main"><a href="portfolio.html" title="Projects/Portfolio">Projects</a></div>
+        <div class="nav-button"><a href="contact.html" title="Contact Me!">Contact</a></div>
+    </div>
+<div style="padding: 2.5% 0; font-family: Helvetica;">
 <h2>CSS Selectors activity</h2>
 
 <h4>Hover over each Images to see the effect</h4>
 
+<div class="container">
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="img_5terre.jpg">
@@ -71,16 +81,65 @@
     <div class="desc">Mountains</div>
   </div>
 </div>
+</div>
 
-<div class="clearfix"></div>
-
-
-
-</body>
-</html>
-
-
-
-
+</div>
+<div class="nav">
+  <div class="item1"><a href="*">< Back to Projects</a></div>
+  <div class="arrow1"><a href="block-inline.html">←</a></div>
+  <div class="item3"><b>Photo Gallery</b> - CSS Selectors Activity</div>
+  <div class="arrow2"></div>
+    <div class="ins"><button id="myBtn">Instructions & Code</button></div>
+</div>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1 style="text-align: center;">Instructions</h1>
+    <hr>
+    <p><i>
+    <ol>
+      <li>Make all the fonts Helvetica.</li>
+      <li>Center the headings.</li>
+      <li>Align the images horizontally.</li>
+      <li>Use CSS selectors that when you hover an image, it will have a border like that of in the video instructions.</li>
+    </ol>
+      Video Instructions:
+      <a href="https://www.loom.com/share/3137851d410248eea3620c5873890a77" style="text-decoration: underline; color: blue;" target="_blank">https://www.loom.com/share/3137851d410248eea3620c5873890a77</a><br><br>
+      In the last activity, you're not allowed to edit the HTML Document. This time, I'm allowing you to alter or edit the HTML Document as long as the desired output is achieved. Use INTERNAL CSS so that you will only have to attach 1 file.</i></p>
+    <h1 style="text-align: center;">Code</h1>
+    <hr>
+    <div class="code">
+    <p>
+    &#60;!DOCTYPE><br>
+    &#60;html><br>
+    &#60;head><br>
+    &#60;title> Johann Kaiser P. Fontanoza &#60;/title><br>
+    &#60;/head><br>
+    &#60;body><br>
+    &#60;h1> Hello World &#60;/h1><br>
+    &#60;p> Johann Kaiser P. Fontanoza &#60;/p><br>
+    &#60;/body><br>
+    &#60;/html><br>
+    </p>
+    </div>
+  </div>
+</div>
+<script>
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</div>
 </body>
 </html>
