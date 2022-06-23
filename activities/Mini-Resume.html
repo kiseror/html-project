@@ -2,6 +2,8 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="activitystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<style>
 	.center {
 		text-align: center;
@@ -17,13 +19,13 @@
 	<title>Mini Resume</title>
 </head>
 <body>
-    <div class="nav-container">
-        <div class="nameplate">My Final Output</div>
-        <div class="nav-button"><a href="index.html" title="Home">Home</a></div>
-        <div class="nav-button"><a href="about.html" title="About Me :)">About</a></div>
-        <div class="nav-button main"><a href="portfolio.html" title="Projects/Portfolio">Projects</a></div>
-        <div class="nav-button"><a href="contact.html" title="Contact Me!">Contact</a></div>
-    </div>
+	<div class="nav-container">
+		<div class="nameplate">My Final Output</div>
+		<div class="nav-button"><a href="https://kiseror.github.io/html-project/index.html" title="Home">Home</a></div>
+		<div class="nav-button"><a href="https://kiseror.github.io/html-project/about.html" title="About Me :)">About</a></div>
+		<div class="nav-button main"><a href="https://kiseror.github.io/html-project/portfolio.html" title="Projects/Portfolio">Projects</a></div>
+		<div class="nav-button"><a href="https://kiseror.github.io/html-project/contact.html" title="Contact Me!">Contact</a></div>
+	</div>
 <div style="padding: 2.5% 0;">
 	<div class="center">
 		<img src="images/fontanoza.jpg" width="20%" alt="ID Picture-Fontanoza" title="Johann Kaiser Fontanoza">
@@ -85,14 +87,14 @@
 	</div>
 </div>
 <div class="nav">
-   	<div class="item1"><a href="*">< Back to Projects</a></div>
-   	<div class="arrow1"><a href="dice6.html">←</a></div>
-   	<div class="item3"><b>My Mini Resume</b> - Mini-resume Activity 2.0</div>
-   	<div class="arrow2"><a href="block-inline.html">→</a></div>
-    <div class="ins"><button id="myBtn">Instructions & Code</button></div>
+   	<div class="item1"><a href="https://kiseror.github.io/html-project/portfolio.html" title="Go Back">< Back to Projects</a></div>
+   	<div class="arrow1"><a href="dice6.html" title="Previous">←</a></div>
+   	<div class="item3"><b>My Mini Resume</b> - Mini-Resume Activity</div>
+   	<div class="arrow2"><a href="block-inline.html" title="Next">→</a></div>
+    <div class="ins"><button id="myBtn" title="See the Instructions and Code">Instructions & Code</button></div>
 </div>
 <div id="myModal" class="modal">
-    <div class="modal-content">
+    <div class="modal-content animate__animated animate__fadeIn animate__faster">
     <span class="close">&times;</span>
     <h1 style="text-align: center;">Instructions</h1>
     <hr>
@@ -100,18 +102,93 @@
     <h1 style="text-align: center;">Code</h1>
     <hr>
     <div class="code">
-    <p>
-    &#60;!DOCTYPE><br>
-    &#60;html><br>
-    &#60;head><br>
-    &#60;title> Johann Kaiser P. Fontanoza &#60;/title><br>
-    &#60;/head><br>
-    &#60;body><br>
-    &#60;h1> Hello World &#60;/h1><br>
-    &#60;p> Johann Kaiser P. Fontanoza &#60;/p><br>
-    &#60;/body><br>
-    &#60;/html><br>
-    </p>
+    <pre>
+    	<code>
+<<span>!DOCTYPE html</span>>
+<<span>html</span>>
+<<span>head</span>>
+	<<span>style</span>>
+	.center {
+		text-align: center;
+	}
+	.size {
+		font-size: 18px;
+	}
+	table,th,td{
+		 border: 1px solid black;
+		 border-collapse: collapse;
+	}
+    <<span>/style</span>>
+	<<span>title</span>>Mini Resume<<span>/title</span>>
+<<span>/head</span>>
+<<span>body</span>>
+	<<span>div class="center"</span>>
+		<<span>img src="images/fontanoza.jpg" width="20%" alt="ID Picture-Fontanoza" title="Johann Kaiser Fontanoza"</span>>
+		<<span>h1</span>>Johann Kaiser P. Fontanoza<<span>/h1</span>> 
+		<<span>h3</span>>Student - RTPM DSHS<<span>/h3</span>>
+	<<span>/div</span>>
+	<<span>hr</span>>
+	<<span>div class="center"</span>>
+		<<span>img src="images/fb.png" width="3%" alt="facebook logo" title="Facebook Logo"</span>>
+		<<span>a href="https://www.facebook.com/J.Kaiserfontanoza/" target="_blank"</span>>Facebook Profile<<span>/a</span>>
+		<<span>img src="images/gmail.png" width="3%" alt="gmail logo" title="Gmail Logo"</span>>
+		<<span>a</span>>johannkaiserf@gmail.com<<span>/a</span>>
+		<<span>img src="images/call.png" width="3%" alt="phone call logo" title="Phone Call Logo"</span>>
+		<<span>a</span>>09213059735<<span>/a</span>>
+	<<span>/div</span>>
+    <<span>br</span>>
+	<<span>div</span>>
+		<<span>p class="size"</span>><<span>b</span>>PERSONAL INFORMATION<<span>/b</span>><<span>/p</span>>
+		<<span>details open</span>>
+			<<span>summary</span>><<span>b</span>>Summary<<span>/b</span>><<span>/summary</span>>
+			<<span>p</span>>I was born on November 3,2007 (14 years old). 
+			I live in in Sibulan, Negros Oriental. A grade 8 student at RTPM-DSHS. My hobbies are biking, 
+			watching videos (funny videos, anime, films, etc), playing video games, playing badminton, 
+			and eating. My skills are video editing and HTML coding. And my interests are editing, biking, 
+			playing badminton, and playing musical instruments. A fun fact about me is that I like riding 
+			tall bikes and even though I can reach it a little, I try to ride it.<<span>/p</span>>
+		<<span>/details</span>>
+		<<span>hr</span>>
+		<<span>p</span>><<span>b</span>>Name:<<span>/b</span>> Johann Kaiser P. Fontanoza<<span>/p</span>>
+		<<span>p</span>><<span>b</span>>School:<<span>/b</span>> RTPM - Dumaguete Science High School<<span>/p</span>>
+		<<span>p</span>><<span>b</span>>Grade Level & Section:<<span>/b</span>> Grade 8 - Pasteur<<span>/p</span>>
+		<<span>p</span>><<span>b</span>>Subject:<<span>/b</span>> ICT 8 - HTML & CSS<<span>/p</span>>
+		<<span>p</span>><<span>b</span>>Career Objectives:<<span>/b</span>><<span>em</span>> I want to become a Web Developer in the future<<span>/em</span>><<span>/p</span>>
+	<<span>hr</span>>
+		<<span>p class="size"</span>><<span>b</span>>EDUCATION<<span>/b</span>><<span>/p</span>>
+		<<span>ul</span>>
+			<<span>li</span>><<span>p</span>><<span>b</span>>Elementary:<<span>/b</span>> West City Science Elementary School | <<span>i</span>>2015-2019<<span>/i</span>><<span>/p</span>><<span>/li</span>>
+			<<span>li</span>><<span>p</span>><<span>b</span>>Secondary:<<span>/b</span>> Dumaguete Science High School | <<span>i</span>>2020-Present<<span>/i</span>><<span>/p</span>><<span>/li</span>>
+		<<span>/ul</span>>
+		<<span>hr</span>>
+		<<span>p class="size"</span>><<span>b</span>>SKILLS<<span>/b</span>><<span>/p</span>>
+	    <<span>table style="width: 100%;"</span>>
+		    <<span>tr</span>>
+		        <<span>th</span>>Skills<<span>/th</span>>
+		        <<span>th</span>>Percentage<<span>/th</span>>
+		        <<span>th</span>>Progress<<span>/th</span>>
+		    <<span>/tr</span>>
+		    <<span>tr class="center"</span>>
+		        <<span>td</span>>Video Editing<<span>/td</span>>
+		        <<span>td</span>>79%<<span>/td</span>>
+		        <<span>td</span>><<span>progress value="79" max="100"</span>><<span>/progress</span>><<span>/td</span>>
+		    <<span>/tr</span>>
+		     <<span>tr class="center"</span>>
+		        <<span>td</span>>Attention to Detail<<span>/td</span>>
+		        <<span>td</span>>80%<<span>/td</span>>
+		        <<span>td</span>><<span>progress value="80" max="100"</span>><<span>/progress</span>><<span>/td</span>>
+		    <<span>/tr</span>>
+		     <<span>tr class="center"</span>>
+		        <<span>td</span>>Html/CSS Skills<<span>/td</span>>
+		        <<span>td</span>>70%<<span>/td</span>>
+		        <<span>td</span>><<span>progress value="70" max="100"</span>><<span>/progress</span>><<span>/td</span>>
+		    <<span>/tr</span>>
+		<<span>/table</span>>
+	<<span>/div</span>>
+<<span>/body</span>>
+<<span>/html</span>>
+    	</code>
+    </pre>
     </div>
   </div>
 </div>

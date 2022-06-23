@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title> DICE ACTIVITY (CSS BOX MODEL)</title>
     <link rel="stylesheet" type="text/css" href="activitystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
         .wrapper {
             border: 10px solid black;
@@ -121,10 +123,10 @@
 <body>
     <div class="nav-container">
         <div class="nameplate">My Final Output</div>
-        <div class="nav-button"><a href="index.html" title="Home">Home</a></div>
-        <div class="nav-button"><a href="about.html" title="About Me :)">About</a></div>
-        <div class="nav-button main"><a href="portfolio.html" title="Projects/Portfolio">Projects</a></div>
-        <div class="nav-button"><a href="contact.html" title="Contact Me!">Contact</a></div>
+        <div class="nav-button"><a href="https://kiseror.github.io/html-project/index.html" title="Home">Home</a></div>
+        <div class="nav-button"><a href="https://kiseror.github.io/html-project/about.html" title="About Me :)">About</a></div>
+        <div class="nav-button main"><a href="https://kiseror.github.io/html-project/portfolio.html" title="Projects/Portfolio">Projects</a></div>
+        <div class="nav-button"><a href="https://kiseror.github.io/html-project/contact.html" title="Contact Me!">Contact</a></div>
     </div>
 <div style="padding: 2.5% 0;">
 <div class="container">
@@ -271,40 +273,295 @@
 </div>
 </div>
 <div class="nav">
-    <div class="item1"><a href="*">< Back to Projects</a></div>
-    <div class="arrow1"><a href="flags.html">←</a></div>
+    <div class="item1"><a href="https://kiseror.github.io/html-project/portfolio.html" title="Go Back">< Back to Projects</a></div>
+    <div class="arrow1"><a href="flags.html" title="Previous">←</a></div>
     <div class="item3"><b>6 Dices</b> - CSS Display and Position Properties Activity</div>
-    <div class="arrow2"><a href="Mini-Resume.html">→</a></div>
-    <div class="ins"><button id="myBtn">Instructions & Code</button></div>
+    <div class="arrow2"><a href="Mini-Resume.html" title="Next">→</a></div>
+    <div class="ins"><button id="myBtn" title="See the Instructions and Code">Instructions & Code</button></div>
 </div>
 <div id="myModal" class="modal">
-    <div class="modal-content">
+    <div class="modal-content animate__animated animate__fadeIn animate__faster">
     <span class="close">&times;</span>
     <h1 style="text-align: center;">Instructions</h1>
     <hr>
-    <p><q><i>In the last activity, you were only tasked to make one-sided dice. This time, you'll be creating 6 sided dice/full-sided dice. Please see attached image for reference.
+    <p><i>In the last activity, you were only tasked to make one-sided dice. This time, you'll be creating 6 sided dice/full-sided dice. Please see attached image for reference.
         <ol>
             <li>Set the border of the dice to be 200px width x 200px height.</li>
             <li>Set the size of the small circles to be 40px height and 40px width.</li>
             <li>Use the CSS property "border-radius" to soften the edges of the divs and to create the small circles.</li>
             <li>Use CSS box model, display, and position properties to position the different div's to their proper places.</li>
         </ol>
-    *Attached is the HTML file. You may alter or edit the HTML file if you want as long as the desired output is achieved. Use internal styling in making the activity so that you will only have to submit one file. Good Luck and Enjoy the activity!!</i></q></p>
+    *Attached is the HTML file. You may alter or edit the HTML file if you want as long as the desired output is achieved. Use internal styling in making the activity so that you will only have to submit one file. Good Luck and Enjoy the activity!!</i></p>
     <h1 style="text-align: center;">Code</h1>
     <hr>
     <div class="code">
-    <p>
-    &#60;!DOCTYPE><br>
-    &#60;html><br>
-    &#60;head><br>
-    &#60;title> Johann Kaiser P. Fontanoza &#60;/title><br>
-    &#60;/head><br>
-    &#60;body><br>
-    &#60;h1> Hello World &#60;/h1><br>
-    &#60;p> Johann Kaiser P. Fontanoza &#60;/p><br>
-    &#60;/body><br>
-    &#60;/html><br>
-    </p>
+        <pre>
+        <code>
+<<span>!DOCTYPE html</span>>
+<<span>html</span>>
+<<span>head</span>>
+    <<span>meta charset="utf-8"</span>>
+    <<span>title</span>> DICE ACTIVITY (CSS BOX MODEL)<<span>/title</span>>
+    <<span>style</span>>
+        .wrapper {
+            border: 10px solid black;
+            border-radius: 25px;
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+            margin-left: 20px;
+            display: inline-block;
+            position: relative;
+        }
+
+        [class^="div"] {
+            height: 40px;
+            width: 40px;
+            background: #000000;
+            border-radius: 100%;
+            position: absolute;
+        }
+
+        <span class="comment">/* 6th side circles */</span>
+        .div1-6th, .div4-6th {
+            top: 10px;
+        }
+
+        .div2-6th, .div5-6th {
+            top: 70px;
+        }
+
+        .div3-6th, .div6-6th {
+            top: 140px;
+        }
+
+        .div4-6th, .div5-6th, .div6-6th {
+            left: 135px;
+        }
+
+        .div1-6th, .div2-6th, .div3-6th {
+            left: 15px;
+        }
+
+        <span class="comment">/* 5th side circles */</span>
+        .div1-5th, .div3-5th {
+            top: 10px;
+        }
+
+        .div5-5th, .div6-5th {
+            top: 140px;
+        }
+
+        .div4-5th {
+            left: 77px;
+            top: 70px;
+        }
+
+        .div1-5th, .div5-5th {
+            left: 15px;
+        }
+
+        .div3-5th, .div6-5th {
+            left: 135px;
+        }
+
+        <span class="comment">/* 4th side circles */</span>
+        .div1-4th, .div3-4th {
+            top: 10px;
+        }
+
+        .div4-4th, .div6-4th {
+            top: 140px;
+        }
+
+        .div1-4th, .div4-4th {
+            left: 15px;
+        }
+
+        .div3-4th, .div6-4th {
+            left: 135px;
+        }     
+
+        <span class="comment">/* 3rd side circles */</span>
+        .div1-3rd {
+            top: 10px;
+            left: 135px;
+        }
+
+        .div2-3rd {
+            top: 70px;
+            left: 77px;
+        }
+
+        .div3-3rd {
+            top: 140px;
+            left: 15px;
+        }
+
+        <span class="comment">/* 2nd side circles */</span>
+        .div1-2nd {
+            top: 10px;
+            left: 135px;
+        }
+
+        .div2-2nd {
+            top: 140px;
+            left: 15px;
+        }
+        
+        <span class="comment">/* 1st side circle */</span>
+        .div1-1st {
+            left: 77px;
+            top: 70px;
+        }
+    <<span>/style</span>>
+<<span>/head</span>>
+<<span>body</span>>
+
+<<span>div class="container"</span>>
+
+<-- 6th side -->
+<-- border section -->
+<<span>div class="wrapper"</span>>
+
+<-- first small circle -->
+<<span>div class="div1-6th"</span>>
+<<span>/div</span>>
+
+<-- second small circle -->
+<<span>div class="div2-6th"</span>>
+<<span>/div</span>>
+
+<-- third small circle -->
+<<span>div class="div3-6th"</span>>
+<<span>/div</span>>
+
+<-- fourth small circle -->
+<<span>div class="div4-6th"</span>>
+<<span>/div</span>>
+
+<-- fifth small circle -->
+<<span>div class="div5-6th"</span>>
+<<span>/div</span>>
+
+<-- sixth small circle -->
+<<span>div class="div6-6th"</span>>
+<<span>/div</span>>
+
+<<span>/div</span>>
+
+<-- 5th side -->
+<-- border section -->
+<<span>div class="wrapper"</span>>
+
+<-- first small circle -->
+<<span>div class="div1-5th"</span>>
+<<span>/div</span>>
+
+
+<-- third small circle -->
+<<span>div class="div3-5th"</span>>
+<<span>/div</span>>
+
+<-- fourth small circle -->
+<<span>div class="div4-5th"</span>>
+<<span>/div</span>>
+
+<-- fifth small circle -->
+<<span>div class="div5-5th"</span>>
+<<span>/div</span>>
+
+<-- sixth small circle -->
+<<span>div class="div6-5th"</span>>
+<<span>/div</span>>
+
+<<span>/div</span>>
+
+
+
+<-- 4th side -->
+<-- border section -->
+<<span>div class="wrapper"</span>>
+
+<-- first small circle -->
+<<span>div class="div1-4th"</span>>
+<<span>/div</span>>
+
+<-- third small circle -->
+<<span>div class="div3-4th"</span>>
+<<span>/div</span>>
+
+<-- fourth small circle -->
+<<span>div class="div4-4th"</span>>
+<<span>/div</span>>
+
+
+<-- sixth small circle -->
+<<span>div class="div6-4th"</span>>
+<<span>/div</span>>
+
+<<span>/div</span>>
+
+
+
+<!- 3rd side ->
+<!- border section ->
+<<span>div class="wrapper"</span>>
+
+
+<!- third small circle ->
+<<span>div class="div1-3rd"</span>>
+<<span>/div</span>>
+
+<!- fourth small circle ->
+<<span>div class="div2-3rd"</span>>
+<<span>/div</span>>
+
+<!- fifth small circle ->
+<<span>div class="div3-3rd"</span>>
+<<span>/div</span>>
+
+
+
+<<span>/div</span>>
+
+
+
+<-- 2nd side -->
+<-- border section -->
+<<span>div class="wrapper"</span>>
+
+
+<-- third small circle -->
+<<span>div class="div1-2nd"</span>>
+<<span>/div</span>>
+
+<-- fourth small circle -->
+<<span>div class="div2-2nd"</span>>
+<<span>/div</span>>
+
+<<span>/div</span>>
+
+
+
+<-- 1st side -->
+<-- border section -->
+<<span>div class="wrapper"</span>>
+
+
+
+<-- fifth small circle -->
+<<span>div class="div1-1st"</span>>
+<<span>/div</span>>
+
+
+<<span>/div</span>>
+
+<<span>/div</span>>
+<<span>/body</span>>
+<<span>/html</span>>
+        </code>
+        </pre>
     </div>
   </div>
 </div>

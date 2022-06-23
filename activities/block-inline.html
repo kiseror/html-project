@@ -4,6 +4,8 @@
 <head>
     <title>HTML Inline and Block Assignment</title>
     <link rel="stylesheet" type="text/css" href="activitystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <style>
     .title {
         text-align: center;
@@ -32,10 +34,10 @@
 <body>
     <div class="nav-container">
         <div class="nameplate">My Final Output</div>
-        <div class="nav-button"><a href="index.html" title="Home">Home</a></div>
-        <div class="nav-button"><a href="about.html" title="About Me :)">About</a></div>
-        <div class="nav-button main"><a href="portfolio.html" title="Projects/Portfolio">Projects</a></div>
-        <div class="nav-button"><a href="contact.html" title="Contact Me!">Contact</a></div>
+        <div class="nav-button"><a href="https://kiseror.github.io/html-project/index.html" title="Home">Home</a></div>
+        <div class="nav-button"><a href="https://kiseror.github.io/html-project/about.html" title="About Me :)">About</a></div>
+        <div class="nav-button main"><a href="https://kiseror.github.io/html-project/portfolio.html" title="Projects/Portfolio">Projects</a></div>
+        <div class="nav-button"><a href="https://kiseror.github.io/html-project/contact.html" title="Contact Me!">Contact</a></div>
     </div>
 <div style="padding: 2.5% 0;">
     <h2 class="title">HTML INLINE VS. BLOCK ELEMENTS</h2>
@@ -56,14 +58,14 @@
     </table>
 </div>
 <div class="nav">
-    <div class="item1"><a href="*">< Back to Projects</a></div>
-    <div class="arrow1"><a href="Mini-Resume.html">←</a></div>
+    <div class="item1"><a href="https://kiseror.github.io/html-project/portfolio.html" title="Go Back">< Back to Projects</a></div>
+    <div class="arrow1"><a href="Mini-Resume.html" title="Previous">←</a></div>
     <div class="item3"><b>Block vs Inline</b> - CSS Display and Position Properties</div>
-    <div class="arrow2"><a href="gallery.html">→</a></div>
-    <div class="ins"><button id="myBtn">Instructions & Code</button></div>
+    <div class="arrow2"><a href="gallery.html" title="Next">→</a></div>
+    <div class="ins"><button id="myBtn" title="See the Instructions and Code">Instructions & Code</button></div>
 </div>
 <div id="myModal" class="modal">
-    <div class="modal-content">
+    <div class="modal-content animate__animated animate__fadeIn animate__faster">
     <span class="close">&times;</span>
     <h1 style="text-align: center;">Instructions</h1>
     <hr>
@@ -71,18 +73,57 @@
     <h1 style="text-align: center;">Code</h1>
     <hr>
     <div class="code">
-    <p>
-    &#60;!DOCTYPE><br>
-    &#60;html><br>
-    &#60;head><br>
-    &#60;title> Johann Kaiser P. Fontanoza &#60;/title><br>
-    &#60;/head><br>
-    &#60;body><br>
-    &#60;h1> Hello World &#60;/h1><br>
-    &#60;p> Johann Kaiser P. Fontanoza &#60;/p><br>
-    &#60;/body><br>
-    &#60;/html><br>
-    </p>
+    <pre>
+        <code>
+<<span>!DOCTYPE HTML</span>>
+<<span>html</span>>
+<<span>head</span>>
+    <<span>title</span>>HTML Inline and Block Assignment<<span>/title</span>>
+<<span>style</span>>
+    .title {
+        text-align: center;
+        font-family: calibri;
+        margin-top: 27px;
+        font-size:  29.3px;
+    }
+    table, th, td {
+        border: 1px solid rgb(0,0,0);
+        border-collapse: collapse;
+    }
+    th {
+        color: rgb(255,255,255);
+        background-color: rgb(255,0,0);
+    }
+    .inline-highlight {
+        background-color: rgb(0, 255, 0);
+        color: rgb(255, 255, 255);
+    }
+    .block-highlight {
+        background-color: rgb(0, 0, 255);
+        color: rgb(255, 255, 255);
+    }
+<<span>/style</span>>
+<<span>/head</span>>
+<<span>body</span>>
+    <<span>h2 class="title"</span>>HTML INLINE VS. BLOCK ELEMENTS<<span>/h2</span>>
+    <<span>table width="100%"</span>>
+        <<span>tr</span>>
+            <<span>th</span>>INLINE ELEMENTS<<span>/th</span>>
+            <<span>th</span>>BLOCK ELEMENTS<<span>/th</span>>
+        <<span>/tr</span>>
+        <<span>tr</span>>
+        <<span>td</span>>
+            <<span>div</span>>The following span is an <<span>span class="inline-highlight"</span>>inline element<<span>/span</span>>; its background has been colored to display both the beginning and end of the inline element's influence<<span>/div</span>>
+        <<span>/td</span>>
+        <<span>td width="41.8%"</span>>
+            <<span>div</span>>The following paragraph is a <<span>p class="block-highlight"</span>>block-level element;<<span>/p</span>>its background has been colored to display both the beginning and end of the block-level element's influence<<span>/div</span>>
+        <<span>/td</span>>
+        <<span>/tr</span>>
+     <<span>/table</span>>
+<<span>/body</span>>
+<<span>/html</span>>
+        </code>
+    </pre>
     </div>
   </div>
 </div>

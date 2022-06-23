@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" type="text/css" href="activitystyle.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>2D Transform - Group 4</title>
 	<style type="text/css">
-* {
+.font {
 	font-family: Comic Sans MS;
-	border-radius: 10px;
-	transition: all 0.2s ease-in-out;
 }
 
 body {
@@ -78,6 +79,8 @@ a {
 	padding: 5px;
 	margin: 10px;
 	text-align: center;
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
 }
 
 .container {
@@ -92,17 +95,22 @@ a {
 	background-color: #c9ad7f;
 	gap: 10px;
 	padding: 10px;
+
 }
 
 .container > div {
 	text-align: center;
 	padding: 5px 20px;
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
 }
 
 .rotate1 {
 	background-color: #c7ad7f;
 	padding: 20px 0px;
 	color: white;
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
 }
 
 .rotate2 {
@@ -111,6 +119,8 @@ a {
 	transform: rotate(-180deg);
 	padding: 50px 0px;
 	margin: 5px;
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
 }
 
 .rotate2:hover {
@@ -125,24 +135,32 @@ a {
 	background-color: #ae6e4e;
 	transform: skewX(30deg);
 	color: white;
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
 }
 
 .skewX2 {
 	background-color: #cc7967;
 	transform: skewX(-45deg);
 	color: white;
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
 }
 
 .skewY1 {
 	background-color: #a57a5a;
 	transform: skewY(-5deg);
 	color: white;
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
 }
 
 .skewY2 {
 	background-color: #c9ad7f;
 	transform: skewY(20deg);
 	color: white;
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
 }
 
 .skew1 {
@@ -150,6 +168,8 @@ a {
 	padding: 20px 0px;
 	margin:10px;
 	color: white;
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
 }
 
 .skew1:hover {
@@ -165,6 +185,8 @@ a {
 	color: black;
 	padding: 20px 0px;
 	margin:10px;
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
 }
 
 .scale2:hover {
@@ -173,6 +195,8 @@ a {
 
 .scale2 {
 	background: white;
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
 } 
 
 .scale1:hover {
@@ -181,10 +205,8 @@ a {
 
 .scaleX1, .scaleY1, .scale1 {
 	background-color: beige;
-}
-
-.scale1 {
-	z-index: 2;
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
 }
 
 .scaleX1:hover {
@@ -238,6 +260,7 @@ a {
 	background: #c7ad7f;
 	color: white;
 	padding: 3px 0px;
+	border-radius: 10px
 }
 
 .support-heading {
@@ -273,6 +296,14 @@ a {
 	</style>
 </head>
 <body>
+	<div class="nav-container">
+		<div class="nameplate">My Final Output</div>
+		<div class="nav-button"><a href="https://kiseror.github.io/html-project/index.html" title="Home">Home</a></div>
+		<div class="nav-button"><a href="https://kiseror.github.io/html-project/about.html" title="About Me :)">About</a></div>
+		<div class="nav-button main"><a href="https://kiseror.github.io/html-project/portfolio.html" title="Projects/Portfolio">Projects</a></div>
+		<div class="nav-button"><a href="https://kiseror.github.io/html-project/contact.html" title="Contact Me!">Contact</a></div>
+	</div>
+<div class="font" style="padding: 3% 0;">
 <div class="container">
 	<div class="grid-item1"><h1>CSS 2d Transform Methods</h1></div>
 	<div class="grid-item2">
@@ -357,6 +388,12 @@ a {
 		</div>
 	<p>The parameters are as follow: <br>matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())</p>
 	</div>
-</div>
+</div></div>
+<div class="nav">
+    <div class="item1"><a href="https://kiseror.github.io/html-project/portfolio.html" title="Go Back">< Back to Projects</a></div>
+    <div class="arrow1"><a href="moon.html" title="Previous">←</a></div>
+    <div class="item3"><b>2d Transform Properties Demo</b> - CSS 2d Transforms</div>
+    <div class="arrow2"></div>
+    <div class="ins"><a href="https://github.com/kiseror/html-project/blob/main/activities/2dtransform.html" target="_blank"><button id="myBtn" title="Code">View Code Here</button></a></div>
 </body>
 </html>

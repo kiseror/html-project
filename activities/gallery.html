@@ -5,6 +5,8 @@
   <title>CSS Selectors Activity</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="activitystyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <style>
     h2, h4 {
       text-align: center;
@@ -32,13 +34,13 @@
   </style>
 </head>
 <body>
-    <div class="nav-container">
-        <div class="nameplate">My Final Output</div>
-        <div class="nav-button"><a href="index.html" title="Home">Home</a></div>
-        <div class="nav-button"><a href="about.html" title="About Me :)">About</a></div>
-        <div class="nav-button main"><a href="portfolio.html" title="Projects/Portfolio">Projects</a></div>
-        <div class="nav-button"><a href="contact.html" title="Contact Me!">Contact</a></div>
-    </div>
+  <div class="nav-container">
+    <div class="nameplate">My Final Output</div>
+    <div class="nav-button"><a href="https://kiseror.github.io/html-project/index.html" title="Home">Home</a></div>
+    <div class="nav-button"><a href="https://kiseror.github.io/html-project/about.html" title="About Me :)">About</a></div>
+    <div class="nav-button main"><a href="https://kiseror.github.io/html-project/portfolio.html" title="Projects/Portfolio">Projects</a></div>
+    <div class="nav-button"><a href="https://kiseror.github.io/html-project/contact.html" title="Contact Me!">Contact</a></div>
+  </div>
 <div style="padding: 2.5% 0; font-family: Helvetica;">
 <h2>CSS Selectors activity</h2>
 
@@ -85,14 +87,14 @@
 
 </div>
 <div class="nav">
-  <div class="item1"><a href="*">< Back to Projects</a></div>
-  <div class="arrow1"><a href="block-inline.html">←</a></div>
+  <div class="item1"><a href="https://kiseror.github.io/html-project/portfolio.html" title="Go Back">< Back to Projects</a></div>
+  <div class="arrow1"><a href="block-inline.html" title="Previous">←</a></div>
   <div class="item3"><b>Photo Gallery</b> - CSS Selectors Activity</div>
   <div class="arrow2"></div>
-    <div class="ins"><button id="myBtn">Instructions & Code</button></div>
+  <div class="ins"><button id="myBtn" title="See the Instructions and Code">Instructions & Code</button></div>
 </div>
 <div id="myModal" class="modal">
-    <div class="modal-content">
+    <div class="modal-content animate__animated animate__fadeIn animate__faster">
     <span class="close">&times;</span>
     <h1 style="text-align: center;">Instructions</h1>
     <hr>
@@ -109,18 +111,86 @@
     <h1 style="text-align: center;">Code</h1>
     <hr>
     <div class="code">
-    <p>
-    &#60;!DOCTYPE><br>
-    &#60;html><br>
-    &#60;head><br>
-    &#60;title> Johann Kaiser P. Fontanoza &#60;/title><br>
-    &#60;/head><br>
-    &#60;body><br>
-    &#60;h1> Hello World &#60;/h1><br>
-    &#60;p> Johann Kaiser P. Fontanoza &#60;/p><br>
-    &#60;/body><br>
-    &#60;/html><br>
-    </p>
+    <pre>
+      <code>
+<<span>!DOCTYPE html</span>>
+<<span>html</span>>
+<<span>head</span>>
+  <<span>meta charset="utf-8"</span>>
+  <<span>title</span>>CSS Selectors Activity<<span>/title</span>>
+  <<span>meta name="viewport" content="width=device-width, initial-scale=1.0"</span>>
+  <<span>style</span>>
+    * {
+      font-family: Helvetica;
+      box-sizing: border-box;
+    }
+
+    h2, h4 {
+      text-align: center;
+    }
+
+    .responsive {
+      float: left;
+      width: 25%;
+      padding: 5px;
+      text-align: center;
+    }
+
+    div.gallery:hover {
+      border: 5px solid gray;
+    }
+
+    .desc {
+      margin: 15px;
+    }
+  <<span>/style</span>>
+<<span>/head</span>>
+<<span>body</span>>
+<<span>h2</span>>CSS Selectors activity<<span>/h2</span>>
+
+<<span>h4</span>>Hover over each Images to see the effect<<span>/h4</span>>
+
+<<span>div class="responsive"</span>>
+  <<span>div class="gallery"</span>>
+    <<span>a target="_blank" href="img_5terre.jpg"</span>>
+      <<span>img src="img_5terre.jpg" alt="Cinque Terre" title="Cinque Terre" width="100%"</span>>
+    <<span>/a</span>>
+    <<span>div class="desc"</span>>Cinque Terre<<span>/div</span>>
+  <<span>/div</span>>
+<<span>/div</span>>
+
+
+<<span>div class="responsive"</span>>
+  <<span>div class="gallery"</span>>
+    <<span>a target="_blank" href="img_forest.jpg"</span>>
+      <<span>img src="img_forest.jpg" alt="Forest" title="Forest" width="100%"</span>>
+    <<span>/a</span>>
+    <<span>div class="desc"</span>>Forest<<span>/div</span>>
+  <<span>/div</span>>
+<<span>/div</span>>
+
+<<span>div class="responsive"</span>>
+  <<span>div class="gallery"</span>>
+    <<span>a target="_blank" href="img_lights.jpg"</span>>
+      <<span>img src="img_lights.jpg" alt="Northern Lights" title="Northern Lights" width="100%"</span>>
+    <<span>/a</span>>
+    <<span>div class="desc"</span>>Northern Lights<<span>/div</span>>
+  <<span>/div</span>>
+<<span>/div</span>>
+
+<<span>div class="responsive"</span>>
+  <<span>div class="gallery"</span>>
+    <<span>a target="_blank" href="img_mountains.jpg"</span>>
+      <<span>img src="img_mountains.jpg" alt="Mountains" title="Mountains" width="100%"</span>>
+    <<span>/a</span>>
+    <<span>div class="desc"</span>>Mountains<<span>/div</span>>
+  <<span>/div</span>>
+<<span>/div</span>>
+<<span>div class="clearfix"</span>><<span>/div</span>>
+<<span>/body</span>>
+<<span>/html</span>>
+      </code>
+    </pre>
     </div>
   </div>
 </div>

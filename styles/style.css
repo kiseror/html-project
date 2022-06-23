@@ -15,9 +15,9 @@ a {
 }
 
 * {
-	font-family: Calibri;
 	margin: 0;
 	padding: 0;
+	font-family: 'Poppins', sans-serif;
 }
 
 .intro {
@@ -42,17 +42,18 @@ a {
 	width: 100%;
 	justify-content: right;
 	box-shadow: 1px 10px 15px -10px rgba(0, 0, 0, 0.1);
+	padding-right: 20px;
 }
 
 .nameplate {
 	position: sticky;
-	right: 100%;
+	right: 90%;
 	font-weight: bold;
 }
 
 .nav-container > div {
 	padding: 10px;
-	font-size: 16px;
+	font-size: 14px;
 	transition: all 0.2s ease-in-out;
 }
 

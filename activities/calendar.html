@@ -3,17 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="activitystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<title>November Calendar</title>
 	<style>
-		* {
-			overflow: hidden;
-		}
-
 		table, th, td {
-			 border: 1px solid black;
+			border: 1px solid black;
 			border-collapse: collapse;
 			text-align: center;
-		}	
+			margin: auto;
+		}
+
 		td {
 			padding: 5px;
 		}
@@ -21,14 +22,17 @@
 			padding-bottom: 5px;
 			padding-top: 5px;
 		}
-		body {
-			position: relative;
-			top: 50px;
-			left: 500px;
-		}
 	</style>
 </head>
 <body>
+	<div style="padding: 3% 0;">
+	<div class="nav-container">
+		<div class="nameplate">My Final Output</div>
+		<div class="nav-button"><a href="https://kiseror.github.io/html-project/index.html" title="Home">Home</a></div>
+		<div class="nav-button"><a href="https://kiseror.github.io/html-project/about.html" title="About Me :)">About</a></div>
+		<div class="nav-button main"><a href="https://kiseror.github.io/html-project/portfolio.html" title="Projects/Portfolio">Projects</a></div>
+		<div class="nav-button"><a href="https://kiseror.github.io/html-project/contact.html" title="Contact Me!">Contact</a></div>
+	</div>
 	<table style="width: 25%;">
 	<caption style="margin-bottom: 10px; font-family: comic sans MS;">November Calendar :D</caption>
 	<colgroup>
@@ -93,6 +97,122 @@
 		<td></td>
 	</tr>
 	</table>
+<div class="nav">
+    <div class="item1"><a href="https://kiseror.github.io/html-project/portfolio.html" title="Go Back">< Back to Projects</a></div>
+    <div class="arrow1"></div>
+    <div class="item3"><b>November Calendar</b> - Making a calendar using HTML Tables</div>
+    <div class="arrow2"><a href="moon.html" title="Next">→</a></div>
+    <div class="ins"><button id="myBtn" title="See the Code">Code</button></div>
+</div>
+<div id="myModal" class="modal">
+	<div class="modal-content animate__animated animate__fadeIn animate__faster">
+    <span class="close">&times;</span>
+    <h1 style="text-align: center;">Code</h1>
+    <hr>
+    <div class="code">
+    <pre>
+      <code>
+<<span>style</span>>
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+	margin: auto;
+}	
+td {
+	padding: 5px;
+}
+th {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+<<span>/style</span>>
+
+<<span>table style="width: 25%;"</span>>
+	<<span>caption style="margin-bottom: 10px; font-family: comic sans MS;">November Calendar :D</span><<span>/caption</span>>
+	<<span>colgroup</span>>
+		<<span>col span="5" style="background-color:lightcyan;"</span>>
+		<<span>col span="7" style="background-color: lightgoldenrodyellow;"</span>>
+	<<span>/colgroup</span>>
+	<<span>tr</span>>
+		<<span>th colspan="7" style="background-color: indianred; color: white;"</span>>November<<span>/th</span>>
+	<<span>/tr</span>>
+	<<span>tr</span>>
+		<<span>th</span>>Mon<<span>/th</span>>
+		<<span>th</span>>Tue<<span>/th</span>>
+		<<span>th</span>>Wed<<span>/th</span>>
+		<<span>th</span>>Thur<<span>/th</span>>
+		<<span>th</span>>Fri<<span>/th</span>>
+		<<span>th</span>>Sat<<span>/th</span>>
+		<<span>th</span>>Sun<<span>/th</span>>
+	<<span>/tr</span>>
+	<<span>tr</span>>
+		<<span>td style="color: red;"</span>>1<<span>/td</span>>
+		<<span>td style="color: red;"</span>>2<<span>/td</span>>
+		<<span>td</span>>3<<span>/td</span>>
+		<<span>td</span>>4<<span>/td</span>>
+		<<span>td</span>>5<<span>/td</span>>
+		<<span>td</span>>6<<span>/td</span>>
+		<<span>td</span>>7<<span>/td</span>>
+	<<span>/tr</span>>
+	<<span>tr</span>>
+		<<span>td</span>>8<<span>/td</span>>
+		<<span>td</span>>9<<span>/td</span>>
+		<<span>td</span>>10<<span>/td</span>>
+		<<span>td</span>>11<<span>/td</span>>
+		<<span>td</span>>12<<span>/td</span>>
+		<<span>td</span>>13<<span>/td</span>>
+		<<span>td</span>>14<<span>/td</span>>
+	<<span>/tr</span>>
+	<<span>tr</span>>
+		<<span>td</span>>15<<span>/td</span>>
+		<<span>td</span>>16<<span>/td</span>>
+		<<span>td</span>>17<<span>/td</span>>
+		<<span>td</span>>18<<span>/td</span>>
+		<<span>td</span>>19<<span>/td</span>>
+		<<span>td</span>>20<<span>/td</span>>
+		<<span>td</span>>21<<span>/td</span>>
+	<<span>/tr</span>>
+	<<span>tr</span>>
+		<<span>td</span>>22<<span>/td</span>>
+		<<span>td</span>>23<<span>/td</span>>
+		<<span>td</span>>24<<span>/td</span>>
+		<<span>td</span>>25<<span>/td</span>>
+		<<span>td</span>>26<<span>/td</span>>
+		<<span>td</span>>27<<span>/td</span>>
+		<<span>td</span>>28<<span>/td</span>>
+	<<span>/tr</span>>
+	<<span>tr</span>>
+		<<span>td</span>>29<<span>/td</span>>
+		<<span>td style="color: red;"</span>>30<<span>/td</span>>
+		<<span>td</span>><<span>/td</span>>
+		<<span>td</span>><<span>/td</span>>
+		<<span>td</span>><<span>/td</span>>
+		<<span>td</span>><<span>/td</span>>
+		<<span>td</span>><<span>/td</span>>
+	<<span>/tr</span>>
+<<span>/table</span>>
+		</code>
+	</pre>
+    </div>
+  </div>
+</div>
+<script>
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </body>
 </html>
 

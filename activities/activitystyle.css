@@ -16,6 +16,7 @@
 	transform: translateY(70%);
 	background-color: white;
 	transition: all 0.5s ease-in-out;
+	font-family: 'Poppins', sans-serif;
 }
 
 .nav:hover {
@@ -50,6 +51,7 @@ button {
 	padding: 10px 15px;
 	background-color: white;
 	transition: all 0.25s ease-in-out;
+	font-family: 'Poppins',sans-serif;
 }
 
 button:hover {
@@ -76,22 +78,24 @@ a {
 	position: fixed;
 	top: 0;
 	right: 0;
-	z-index: 3;
+	z-index: 1;
 	background-color: white;
 	width: 100%;
 	justify-content: right;
 	box-shadow: 1px 10px 15px -10px rgba(0, 0, 0, 0.1);
+	font-family: 'Poppins', sans-serif;
+	padding-right: 20px;
 }
 
 .nameplate {
 	position: sticky;
-	right: 100%;
+	right: 90%;
 	font-weight: bold;
 }
 
 .nav-container > div {
 	padding: 10px;
-	font-size: 16px;
+	font-size: 14px;
 	transition: all 0.2s ease-in-out;
 }
 
@@ -113,6 +117,7 @@ a {
   overflow: auto; 
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.85); 
+  transition: all 0.2s ease-in-out;
 }
 
 /* Modal Content */
@@ -122,7 +127,10 @@ a {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  max-height: 70%;
+  overflow: auto;
   border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* The Close Button */
@@ -133,8 +141,7 @@ a {
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -142,9 +149,23 @@ a {
 
 /*code sulod sa modal*/
 .code {
-	padding: 10px 20px;
+	padding: 5px 20px;
 	background-color: #303942;
 	color: white;
 	border-radius: 5px;
-	font-family: monospace;
+	font-size: 15px;
+	max-height: 30%;
+	overflow: auto;
+}
+
+.doctype {
+	color: #b99dbe;
+}
+
+.comment {
+	color: gray;
+}
+
+span {
+	color: #ce6874;
 }

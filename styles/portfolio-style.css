@@ -47,3 +47,7 @@ h2 {
 	--animate-duration: 1.25s;
 	overflow: hidden;
 }
+
+h3 {
+	font-weight: 500;
+}
