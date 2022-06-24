@@ -47,7 +47,7 @@ a {
 
 .nameplate {
 	position: sticky;
-	right: 90%;
+	right: 85%;
 	font-weight: bold;
 }
 
@@ -248,7 +248,7 @@ h2 {
     background-clip: padding-box;
     border: 1px solid #ced4da;
     outline: none;
-    border-radius: 0.25rem;
+    border-radius: 25px;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -261,7 +261,7 @@ select.fcf-form-control[size], select.fcf-form-control[multiple] {
 }
 
 textarea.fcf-form-control {
-    font-family: -apple-system, Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     height: auto;
 }
 
@@ -302,7 +302,7 @@ label.fcf-label {
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 0.25rem;
+    border-radius: 30px;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -341,7 +341,7 @@ label.fcf-label {
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
     line-height: 1.5;
-    border-radius: 0.3rem;
+    border-radius: 30rem;
 }
 
 .fcf-btn-block {
@@ -356,4 +356,147 @@ label.fcf-label {
 input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
     width: 100%;
     font-family: 'Poppins', sans-serif;
+}
+
+/*About me Tab*/
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border-bottom	: 1px solid #cc0000;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #cc0000;
+  color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 15px 12px;
+  border-top: none;
+}
+
+.about-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border: 1px soild black;
+}
+
+.about-container > div {
+	margin: 10px;
+}
+
+.about-container abbr {
+	text-decoration: none;
+}
+
+.about-container li {
+	margin: 10px;
+}
+
+.education p {
+	margin: 10px;
+}
+
+.progress-bar {
+	background-color: #e0e0e0;
+	color: white;
+}
+
+[class^="percent"] {
+	display: block;
+	height: 40px;
+	line-height: 2.5em;
+	text-align: center;
+	animation: progress 1500ms ease-in 1;
+}
+
+.percent1 {
+	width: 79%;
+	background-color: #bc3a3a;
+}
+
+.percent2 {
+	width: 80%;
+	background-color: #bc3a3a;
+}
+
+.percent3 {
+	width: 73%;
+	background-color: #bc3a3a;
+}
+
+.percent4 {
+	width: 78%;
+	background-color: #bc3a3a;
+}
+
+@keyframes progress {
+	from{
+		width: 0;
+	}
+}
+/*Home page*/
+.top {
+	padding-top: 85px;
+	display: flex;
+	overflow: hidden;
+}
+
+.picture {
+	width: 500px;
+}
+
+.picture img {
+	border-radius: 75px;
+}
+
+.text {
+	width: 100%;
+	margin: auto;
+}
+
+.text a {
+	display: block;
+	padding: 10px;
+	border: 3px solid #cc0000;
+	margin: 10px 55% 10px 0px;
+	text-align: center;
+	letter-spacing: 0.25em;
+	border-radius: 50px;
+	font-weight: 700;
+	color: #cc0000;
+	transition: all 0.15s ease-in-out;
+}
+
+.text a:hover {
+	background-color: #cc0000;
+	color: white;
+	transform: translateY(-5px);
+}
+
+.text a:active {
+	background-color: #aa0000;
+	border: 3px solid #aa0000;
 }

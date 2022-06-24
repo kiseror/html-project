@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Ict Final Output | About</title>
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 	<div class="nav-container">
@@ -14,14 +16,102 @@
 		<div class="nav-button"><a href="portfolio.html" title="Projects/Portfolio">Projects</a></div>
 		<div class="nav-button"><a href="contact.html" title="Contact Me!">Contact</a></div>
 	</div>
-	<div class="intro">
-		<h1>About Me :DD</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div class="intro" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(images/happenis.png)">
+		<div>
+			<h1>About Me</h1>
+			<p>A section where you get to know about me <br>:))</p>
+		</div>
 	</div>
+	<div class="margin">
+		<div class="tab animate__animated animate__fadeIn">
+  			<button class="tablinks active" onclick="openSection(event, 'Information')"><h3>Personal Info</h3></button>
+  			<button class="tablinks" onclick="openSection(event, 'Education')"><h3>Education</h3></button>
+  			<button class="tablinks" onclick="openSection(event, 'Skills')"><h3>Skills</h3></button>
+		</div>
+
+		<div id="Information" class="tabcontent animate__animated animate__fadeIn" style="display: block;">
+			<div class="about-container">
+				<div class="info-item">
+					<p><b>Name:</b><br> Johann Kaiser <abbr title="Patigas">P.</abbr> Fontanoza</p>
+				</div>
+				<div class="info-item">
+					<p><b>Birthday:</b><br> November 3, 2007</p>
+				</div>
+				<div class="info-item">
+					<p><b>School:</b><br> <abbr title="Ramon Teves Pastor Memorial">RTPM</abbr> - Dumaguete Science High School</p>
+				</div>
+				<div class="info-item">
+					<p><b>Age (As of June 2022):</b><br> 14 years old</p>
+				</div>
+				<div class="info-item">
+					<p><b>Grade Level and Section (<abbr title="School Year">S.Y</abbr> 2021-2022):</b><br> Grade VIII - Pasteur</p>
+				</div>
+				<div class="info-item">
+					<p><b>Birthplace:</b><br> Bacolod City, Negros Occidental</p>
+				</div>				
+				<div class="info-item">
+					<p><b>Career Objectives:</b><br> I want to become a Web Developer in the future</p>
+				</div>
+				<div class="info-item">
+					<p><b>Location:</b><br> Sibulan, Negros Oriental</p>
+				</div>
+				<div class="info-item">
+					<p>
+					<b>Hobbies:</b><br> Playing video games, Watching cartoon shows, Biking, and HTML Coding
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="Education" class="tabcontent education animate__animated animate__fadeIn">
+			<p><b>Primary (Kindergarten):</b> <br>University of Cebu | <i>2013 - 2014</i></p>
+			<p><b>Elementary:</b><br>Little Village Educational Foundation Inc | <i>2014 - 2015</i><br>West City Science Elementary School | <i>2015 - 2020</i></p>
+			<p><b>Junior High:</b><br>Ramon Teves Pastor Memorial - <br>Dumaguete Science High School | <i>2020 - Present</i></p>
+		</div>
+
+		<div id="Skills" class="tabcontent animate__animated animate__fadeIn">
+  			<div class="about-container">
+  				<div class="skills-item">
+  					<b>Video Editing - 79%</b>
+  					<div class="progress-bar">
+  						<span class="percent1"></span>
+  					</div>
+  				</div>
+  				<div class="skills-item">
+  					<b>HTML/CSS Skills - 80%</b>
+  					<div class="progress-bar">
+  						<span class="percent2"></span>
+  					</div>
+  				</div>
+  				<div class="skills-item">
+  					<b>Attention to Detail - 73%</b>
+  					<div class="progress-bar">
+  						<span class="percent3"></span>
+  					</div>
+  				</div>
+  				<div class="skills-item">
+  					<b>Solving Math Problems - 74%</b>
+  					<div class="progress-bar">
+  						<span class="percent4"></span>
+  					</div>
+  				</div>
+  			</div>
+		</div>
+	</div>
+<script>
+function openSection(evt, sectionName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(sectionName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 </body>
 </html>
