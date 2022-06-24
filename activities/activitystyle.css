@@ -32,6 +32,10 @@
 	margin: 10px 0px;
 }
 
+[class^="arrow"], .item1:active {
+	color: #cc0000;	
+}
+	
 [class^="item"] {
 	margin: 10px;
 }
