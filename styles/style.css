@@ -317,11 +317,6 @@ label.fcf-label {
     text-decoration: none;
 }
 
-.fcf-btn:focus, .fcf-btn.focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-
 .fcf-btn-primary {
     background-color: #e6e6e6;
 }
@@ -333,8 +328,7 @@ label.fcf-label {
 
 .fcf-btn-primary:focus, .fcf-btn-primary.focus {
     color: #fff;
-    background-color: #cc0000;
-    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+    background-color: #720000;
 }
 
 .fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
