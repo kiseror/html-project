@@ -470,3 +470,18 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 	width: 100%;
 	margin: auto;
 }
+
+
+.bio {
+	margin-right: 200px;
+	text-align: justify;
+}
+
+.a-colored {
+	text-decoration: underline;
+	color: #dd0000;
+}
+
+.a-colored:active {
+	color: #bb0000;
+}
